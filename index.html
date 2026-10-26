@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alicia en el país de las maravillas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Alicia en el país de las maravillas</h1>
+        <p>Tres desafíos sencillos de JavaScript</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. La poción mágica de Alicia</h2>
+            <p>Regla: altura final = altura inicial × (1 + cantidad de poción / 100).</p>
+            <p>La puerta mide 150 cm. La poción permitida va de 0 a 100 ml.</p>
+            <form id="formPocion">
+                <label for="altura">Altura inicial de Alicia (cm):</label>
+                <input type="number" id="altura" min="1" step="any" required>
+
+                <label for="pocion">Cantidad de poción (ml):</label>
+                <input type="number" id="pocion" min="0" max="100" step="any" required>
+
+                <button type="submit">Calcular altura</button>
+            </form>
+            <p id="resultadoPocion" class="resultado" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>2. La merienda del Sombrerero Loco</h2>
+            <p>Precios: té = Bs 5; café = Bs 7; chocolate = Bs 8; limonada = Bs 4.</p>
+            <p>Si compra 5 tazas o más, recibe un descuento del 10 %.</p>
+            <form id="formMerienda">
+                <label for="nombre">Nombre del invitado:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="bebida">Elige una bebida:</label>
+                <select id="bebida" required>
+                    <option value="">Selecciona una bebida</option>
+                    <option value="te">Té — Bs 5</option>
+                    <option value="cafe">Café — Bs 7</option>
+                    <option value="chocolate">Chocolate — Bs 8</option>
+                    <option value="limonada">Limonada — Bs 4</option>
+                </select>
+
+                <label for="tazas">Cantidad de tazas (1 a 10):</label>
+                <input type="number" id="tazas" min="1" max="10" step="1" required>
+
+                <button type="submit">Calcular compra</button>
+            </form>
+            <p id="resultadoMerienda" class="resultado" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>3. El desafío de la Reina de Corazones</h2>
+            <p>Ingresa una cantidad de cartas del 1 al 20. Se separarán los números pares e impares.</p>
+            <form id="formReina">
+                <label for="cartas">Cantidad de cartas (1 a 20):</label>
+                <input type="number" id="cartas" min="1" max="20" step="1" required>
+                <button type="submit">Analizar cartas</button>
+            </form>
+            <p id="resultadoReina" class="resultado" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Actividad práctica de Programación Web I · HTML, CSS y JavaScript básico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

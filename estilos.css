@@ -1,0 +1,91 @@
+/* Estilos sencillos inspirados en Alicia en el país de las maravillas */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5efff;
+    color: #29213a;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #51376f;
+    color: white;
+    text-align: center;
+    padding: 24px 12px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+main {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 0 14px;
+}
+
+section {
+    background-color: white;
+    border: 2px solid #d7c5ed;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #51376f;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #9d8ab5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #51376f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #76549a;
+}
+
+.resultado {
+    background-color: #f5efff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 14px;
+    background-color: #e4d8f3;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 12px;
+    }
+}
